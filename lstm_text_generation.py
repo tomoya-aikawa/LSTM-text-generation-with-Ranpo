@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from __future__ import print_function
 from keras.models import Sequential
 from keras.layers import Dense, Activation
@@ -68,7 +70,7 @@ for iteration in range(1, 60):
     print('Iteration', iteration)
     model.fit(X, y,
               batch_size=128,
-              epochs=1)
+              nb_epoch=1)
 
     start_index = random.randint(0, len(text) - maxlen - 1)
 
