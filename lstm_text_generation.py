@@ -14,7 +14,6 @@ import MeCab
 # path = get_file('nietzsche.txt', origin='https://s3.amazonaws.com/text-datasets/nietzsche.txt')
 path = "ranpo.txt"
 text = open(path).read()
-MeCab.Tagger("-O wakati")
 m = MeCab.Tagger("-O wakati")
 text = m.parse(text)
 print('corpus length:', len(text))
